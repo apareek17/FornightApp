@@ -12,9 +12,5 @@ public interface FornightService {
     @GET("profile/{platform}/{epic-nickname}")
     public Call<ItemResponse> searchByPlatfrom(@Path("platform") String platform, @Path("epic-nickname") String epicNickname);
 
-
-    @Headers("TRN-Api-Key: 4c503120-d709-4743-b15e-4d6c00a167dd")
-    @GET("store")
-    public Call<Store> getStore();
 }
 
